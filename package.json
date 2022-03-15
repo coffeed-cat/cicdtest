@@ -1,0 +1,23 @@
+{
+  "name": "momentary_english-main",
+  "version": "1.0.0",
+  "description": "rev1: https://nozomuyoshida.github.io/momentary_english/  \r rev2: https://coffeed-cat.github.io/momentary-english-dev/index.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Momentary-English/momentary_english.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Momentary-English/momentary_english/issues"
+  },
+  "homepage": "https://github.com/Momentary-English/momentary_english#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

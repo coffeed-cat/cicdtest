@@ -1,0 +1,19 @@
+.return-button-container {
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.return-button {
+  color: white;
+
+  transition: linear 130ms;
+}
+
+.return-button:hover {
+  transition: linear 130ms;
+  transform: scale(1.1);
+  color: white;
+}

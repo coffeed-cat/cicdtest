@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Momentary English &mdash; Free website to make you a fluent English speaker.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free website to make you fluent English speaker" />
+	<meta name="keywords" content="english, speaking, english training, speaking training, english conversation, web app, mobile first, responsive" />
+	<meta name="author" content="Nozomu Yoshida" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		.progress-bar {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: orange;
+			height: 2%;
+		}
+	</style>
+
+	</head>
+
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="fh5co-top-logo">
+				<div id="fh5co-logo"><a href="index.html">Momentary English</a></div>
+			</div>
+			<!-- <div class="fh5co-top-menu menu-1 text-center">
+				<ul>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="about.html">Profile</a></li>
+					<li class="has-dropdown">
+						<a href="#">Dropdown</a>
+						<ul class="dropdown">
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">eCommerce</a></li>
+							<li><a href="#">Branding</a></li>
+							<li><a href="#">API</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="fh5co-top-social menu-1 text-right">
+				<ul class="fh5co-social">
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-dribbble"></i></a></li>
+					<li><a href="#"><i class="icon-github"></i></a></li>
+				</ul>
+			</div> -->
+		</div>
+	</nav>
+	
+	<div id="fh5co-work">
+		<div class="container">
+			<div class="row top-line animate-box title-momentary-english">
+				<div class="col-md-7 text-center intro">
+					<h2>Momentary English<span class="fh5co-highlight">&mdash; Free website to make you a fluent English speaker.</h2>
+					<!-- <h2>Momentary English<span class="fh5co-highlight">&mdash; Free website to make you a fluent English speaker.</a> </span><span class="fh5co-highlight">Made with <i class="icon-heart2"></i> by <a href="https://no-zz.com/profile/">Nozomu Yoshida</a> </span></h2> -->
+					<!-- <h2>Shift is a Collection of a Beautiful &amp; Premium Themes.</h2> -->
+				</div>
+			</div>
+
+
+	
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h2>How to use</h2>
+							<p>1. 短文のフラッシュカードが日▶︎英の順番で表示されます．</p>
+							<p>2. 日本語が表示されている間に頭で英訳をイメージします．</p>
+							<p>3. 一定時間後に表示される英語の回答例文を確認します．</p>
+							<!-- <p><a href="#" class="btn btn-primary">How to use</a></p> -->
+						</div>
+
+
+
+			<div class="row">
+				<% if(secCount) { %>
+					<% for(let i=0; i<secCount; i++) { %>
+						<div class="col-md-4 text-center animate-box">
+							<a class="work" href="/section?section=<%= +i+1 %>">
+								<div class="work-grid" style="background-image:url(images/project-<%= (+i)%9+1 %>.jpg);">
+									<div class="inner">
+										<div class="desc">
+										<h3>Section <%= +i+1 %></h3>
+										<span class="cat"><%= SENTENCES[`section${+i+1}`].title[2] %></span>
+									</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					<% } %>
+				<% } %>
+				
+
+				<SCRIPT language="javascript">
+				function j(){
+				var u=new Array("section1/","section2/","section3/","section4/","section5/","section6/","section7/","section8/","section9/","section10/","section11/","section12/","section13/","section14/","section15/","section16/","section17/","section18/","section19/","section20/","section21/","section22/","section23/");
+				location.href=(u[Math.floor(Math.random()*u.length)]);
+				}
+				</SCRIPT>
+					
+				<div class="col-md-4 text-center animate-box">
+					<a class="work" href="JavaScript:j();">
+						<div class="work-grid" style="background-image:url(images/person3.jpg);">
+							<div class="inner">
+								<div class="desc">
+									<h3>Random</h3>
+									<span class="cat">Random Section</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<!-- <div id="fh5co-author" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>A little about me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="author">
+						<div class="author-inner animate-box" style="background-image: url(images/person3.jpg);">
+						</div>
+						<div class="desc animate-box">
+							<span>Web Designer &amp; Developer</span>
+							<h3>Mike Airways</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							<p><a href="about.html" class="btn btn-primary btn-outline">Learn More</a></p>
+							<ul class="fh5co-social-icons">
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>How to use</h2>
+					<p>1. 短文のフラッシュカードが日▶︎英の順番で表示されます．</p>
+					<p>2. 日本語が表示されている間に頭で英訳をイメージします．</p>
+					<p>3. 一定時間後に表示される英語の回答例文を確認します．</p>
+					<p><a href="#" class="btn btn-primary">Learn more... (Nothing for now)</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">※ 本サイトは『どんどん話すための瞬間英作文トレーニング』（著：森沢洋介）を参考にしています</small>
+						<small class="block">※ 著者・出版社様のご厚意により，当該書籍と構成・内容の差別化をした上での公開許可をいただきました</small>
+						<small class="block">※ 現在，構成・内容の改変作業中につき，本サイトのURLの一般公開はお控えください</small>
+						<br>
+						<small class="block">&copy; 2021 Nozomu Yoshida</small>
+						<!-- <small class="block">&copy; 2021 Nozomu Yoshida. All Rights Reserved.</small>  -->
+						<!-- <small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="http://blog.gessato.com/" target="_blank">Gessato</a></small> -->
+					</p>
+					
+					<!-- <ul class="fh5co-social-icons">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+						<li><a href="#"><i class="icon-dribbble"></i></a></li>
+					</ul> -->
+					
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	<!-- <script src="./section1/sentences.js"></script> -->
+
+	<script>
+		$(document).ready(function(){
+			const inners = document.getElementsByClassName("inner");
+
+		for(let i in inners) {
+			const sectionNumber = +i+1;
+
+			const progressBarForInners = document.createElement('div');
+
+			progressBarForInners.classList.add('progress-bar');
+
+			progressBarForInners.classList.add(`section${sectionNumber}`);
+
+			inners[i].appendChild(progressBarForInners);
+
+			const sectionProgressInLocalStorage = localStorage.getItem(`section${sectionNumber}`);
+
+			if (sectionProgressInLocalStorage){
+				const progressPercentage = 100*sectionProgressInLocalStorage;
+				document.querySelector(`.section${sectionNumber}`).style.width = `${progressPercentage}%`;
+			}
+		}
+		});
+
+	</script>
+
+	</body>
+</html>
+
