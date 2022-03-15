@@ -4,6 +4,8 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/cicdtest
+    overwrite: yes
+
 permissions:
   - object: /home/ubuntu/cicdtest
     owner: ubuntu
