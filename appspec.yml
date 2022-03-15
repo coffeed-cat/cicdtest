@@ -4,7 +4,7 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/cicdtest
-    overwrite: yes
+    overwrite: true
 
 file_exists_behavior: OVERWRITE
 
